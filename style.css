@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/box-background.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: none;
+}
+/* ----------- navabr start-------------------- */
+
+#navbar .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+   
+}
+
+#typed{
+    margin-top: 3rem;
+    color: white;
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+/* ---------------- main start----------------- */
+
+
+.main-div{
+    height: 90vh;
+}
+.box{
+    position: relative;
+    background-image: url(img/box-background.png);
+    background-size: cover;
+    border-radius: 1.2rem;
+
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: -0.2rem;
+    left: -0.2rem;
+    right: -0.2rem;
+    bottom: -0.2rem;
+    background: white;
+    border-radius: 1.2rem;
+    z-index: -1;
+}
+.box::after{
+    content: "";
+    position: absolute;
+    top: -0.2rem;
+    left: -0.2rem;
+    right: -0.2rem;
+    bottom: -0.2rem;
+    background: white;
+    border-radius: 1.2rem;
+    z-index: -2;
+    filter: blur(4rem);
+}
+.box::before,.box::after{
+    background: linear-gradient(rgb(0, 247, 255),rgba(0, 0, 0, 0),orange);
+}
+.heading{
+    /* background: mediumaquamarine; */
+
+}
+.heading h1{
+    font-weight: bold;
+    color:  white;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    text-shadow: 0 0 1rem rgb(0, 247, 255),0 0 2rem rgb(0, 247, 255),0 0 4rem rgb(0, 247, 255),0 0 8rem rgb(0, 247, 255),0 0 12rem rgb(0, 247, 255);
+}
+.botam{
+    display: flex;
+    justify-content: center;
+}
+
+.botam button{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    background-image: url(img/jarvis-background.jpg);
+    background-size: cover;
+    margin:2rem;
+    min-width:28rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+    transition: 0.5s;
+    
+}
+
+.botam button:hover{
+    transform: scale(1.1);
+    box-shadow:  0 0 0.25rem rgb(0, 247, 255),0 0 0.25rem rgb(0, 247, 255),0 0 0.25rem rgb(0, 247, 255),0 0 2rem rgb(0, 247, 255),0 0 0.25rem rgb(0, 247, 255);;
+    text-shadow: 0 0 1rem orange,0 0 2rem orange,0 0 4rem orange,0 0 8rem orange,0 0 12rem orange;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/jarvis-background.jpg);
+    
+}
+
+/* ----------- social start ------------*/
+
+
+.social_icon{
+    display: flex;
+    justify-content: center;
+}
+.social_icon a{
+    margin: 3rem 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.2rem;
+    background-color: rgb(214, 214, 214);
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: 0.5s;
+
+}
+.social_icon a:hover{
+    
+    transform: translateY(-0.2rem);
+    box-shadow:  0 0 1rem orange,0 0 2rem orange,0 0 4rem orange,0 0 8rem orange,0 0 12rem orange;;
+}
+.social_icon a i{
+    font-size: 2.5rem;
+    color: rgb(41, 41, 41);
+}
+
+.fa-facebook:hover{
+    color: rgb(18, 81, 133);
+}
+.fa-instagram:hover{
+    color: rgb(205, 19, 230);
+}
+.fa-linkedin-in:hover{
+    color: rgb(0, 78, 141);
+}
+.fa-twitter:hover{
+    color: rgb(67, 186, 241);
+}
+.fa-youtube:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+@media(max-width:990px){
+    .botam button{
+        font-size: 1.5rem;
+        margin:2rem 5rem;
+        min-width:20rem;
+        padding: 1rem 1rem; 
+    }
+
+
+
+}
+
+
+
+
+@media(max-width:764px){
+
+
+
+
+    #typed{
+        margin-top: 3rem;
+        color: white;
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;   
+    }
+
+    .heading h1{
+        font-size: 3rem;
+    }
+
+    .botam{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .botam a{
+        display: flex;
+     
+        justify-content: center;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .botam button{
+        font-size: 1.5rem;
+        margin:2rem 5rem;
+        min-width:20rem;
+        padding: 1rem 1rem; 
+    }
+
+    .box{
+       margin-top: 4rem;
+    
+    }
+    #social{
+        margin-top: 10rem;
+    }
+
+  #social h4{
+   font-size: 1rem;
+  }
+
+  .social_icon a i{
+    font-size: 1.5rem;
+  
+}
+.social_icon a{
+    margin: 3rem 1rem;
+ 
+    width: 2.5rem;
+    height: 2.5rem;
+    
+
+}
+
+
+
+}
+
+
+/* @media(max-width:360px){
+
+    #social{
+     
+        margin-top: 13rem;
+    }
+
+
+} */
